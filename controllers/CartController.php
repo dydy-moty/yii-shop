@@ -63,7 +63,7 @@ class CartController extends Controller
             if ($order->save()) {
                 Yii::$app->mailer->compose()
                     ->setFrom(['manager-yii-shop@gmail.com' => 'test message'])
-                    ->setTo('content-manager@yandex.ru')
+                    ->setTo($order->email)
                     ->setSubject('Ваш заказ принят!')
                     ->send();
                 $session->remove('cart');
