@@ -53,4 +53,6 @@ phpunit.phar
 /web/css/bootstrap.css
 /web/css/jquery.countdown.css
 /markup
+/runtime/logs
+/runtime/mail
 
